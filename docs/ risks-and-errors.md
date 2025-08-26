@@ -1,0 +1,1 @@
+# ⚠️ Riscos e Erros Potenciais

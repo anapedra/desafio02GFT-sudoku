@@ -1,0 +1,20 @@
+# Compilados Java
+target/
+*.class
+
+# Logs
+*.log
+
+# IDEs e editores
+.idea/
+.vscode/
+*.iml
+
+# Node.js (frontend)
+node_modules/
+dist/
+build/
+
+# SO
+.DS_Store
+Thumbs.db
