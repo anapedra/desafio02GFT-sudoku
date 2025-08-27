@@ -1,34 +1,45 @@
-# Visão Geral
+# 🎲 Visão Geral  
 
-O **Sudoku** é um jogo de raciocínio lógico e numérico amplamente difundido em todo o mundo. Seu objetivo é preencher uma grade de 9x9 células com números de 1 a 9, respeitando as regras de não repetir números em linhas, colunas e subgrades 3x3.  
-É reconhecido por estimular a concentração, o pensamento estratégico e a capacidade de resolver problemas, tornando-se um dos passatempos mais populares da atualidade.
+O **Sudoku** é um dos jogos de raciocínio lógico mais populares do mundo.  
+O objetivo é preencher uma grade de **9x9** células com números de **1 a 9**, sem repetições em:  
+- ➡️ Linhas  
+- ⬇️ Colunas  
+- 🟦 Subgrades 3x3  
 
----
-
-# Análise de Negócio
-
-## Finalidade
-O Sudoku tem como principal finalidade proporcionar **entretenimento saudável** e ao mesmo tempo **desenvolver habilidades cognitivas**. Ele é usado tanto como passatempo recreativo quanto como exercício mental, indicado para todas as idades.
-
-## Público-Alvo
-- **Indivíduos em geral**: Pessoas que buscam lazer e desafios intelectuais no dia a dia.  
-- **Profissionais e estudantes**: Interessados em treinar memória, foco e capacidade analítica.  
-- **Instituições educacionais**: Escolas, universidades e centros de treinamento que utilizam o Sudoku como ferramenta de aprendizado lógico.  
-- **Mercado editorial e digital**: Jornais, revistas, aplicativos e plataformas de jogos que ofertam o Sudoku como produto de consumo.
-
-## Propósitos do Negócio
-- **Estimular o raciocínio lógico e matemático** de forma simples e acessível.  
-- **Oferecer uma atividade de baixo custo**, já que pode ser realizada em papel, revistas, jornais ou em dispositivos eletrônicos.  
-- **Atender diferentes contextos de uso**, desde o lazer casual até competições organizadas em campeonatos oficiais.  
-- **Ampliar engajamento de público** em setores como educação, entretenimento e bem-estar mental.  
-
-## Benefícios
-- **Cognitivos**: Melhora da concentração, memória de curto prazo e capacidade de resolução de problemas.  
-- **Sociais**: Estímulo a competições amistosas e compartilhamento de desafios entre amigos, comunidades e escolas.  
-- **Comerciais**: Geração de valor para empresas de mídia impressa e digital, editoras de jogos e plataformas educacionais.  
+🎯 Além de divertido, o Sudoku estimula a **concentração**, o **pensamento estratégico** e a **resolução de problemas**.  
 
 ---
 
-# Conclusão
+# 🔎 Análise de Negócio  
 
-O Sudoku não é apenas um jogo de passatempo, mas um **instrumento de desenvolvimento cognitivo** e de **engajamento social e comercial**. Sua simplicidade, aliada ao desafio crescente, faz com que seja um produto atemporal, capaz de atrair desde jogadores casuais até competidores avançados, mantendo sua relevância tanto no formato manual quanto no digital.
+## 🎯 Finalidade  
+Oferecer **entretenimento saudável** enquanto desenvolve **habilidades cognitivas**, podendo ser usado como:  
+- passatempo recreativo  
+- exercício mental  
+- ferramenta educacional  
+
+## 👥 Público-Alvo  
+- **Indivíduos em geral** → lazer e desafio intelectual no dia a dia  
+- **Profissionais e estudantes** → treino de memória, foco e análise  
+- **Instituições educacionais** → uso em sala de aula como recurso de aprendizado lógico  
+- **Mercado editorial/digital** → jornais, revistas, aplicativos e plataformas de jogos  
+
+## 📌 Propósitos do Negócio  
+- 🧠 Estimular o **raciocínio lógico e matemático**  
+- 💰 Proporcionar uma **atividade de baixo custo** (papel ou digital)  
+- 🏆 Atender diferentes contextos (lazer casual → campeonatos oficiais)  
+- 🌍 Ampliar o **engajamento social e educacional**  
+
+## 💡 Benefícios  
+- **Cognitivos**: concentração, memória, resolução de problemas  
+- **Sociais**: interação, competições amistosas, aprendizado coletivo  
+- **Comerciais**: valor agregado para editoras, plataformas digitais e apps  
+
+---
+
+# ✅ Conclusão  
+
+O Sudoku não é apenas um passatempo:  
+é um **instrumento de desenvolvimento mental** e de **engajamento social**.  
+
+📌 Sua **simplicidade** somada ao **desafio crescente** o tornam um produto atemporal, relevante tanto no **formato manual** quanto no **digital**, atraindo desde jogadores casuais até competidores avançados.  
