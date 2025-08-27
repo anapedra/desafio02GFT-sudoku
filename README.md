@@ -12,8 +12,9 @@ Repositório do jogo de Sudoku desenvolvido como desafio, com documentação de 
 ### Diagramas
 - [Diagrama de Classes](docs/class-diagram.png)
 - [Diagrama de Casos de Uso](docs/usecase-diagram.png)
-- [Diagrama de Sequência](docs/sequence-diagram.md)
+- [Diagrama de Sequência](docs/sequence-diagram.png)
 - [Arquitetura Hexagonal](docs/architecture-hexagonal.png)
+
 ## 🎥 Demonstração
 ![Demo do jogo](assets/demo.gif)
 
