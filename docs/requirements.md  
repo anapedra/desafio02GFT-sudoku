@@ -1,1 +1,127 @@
-# 📋 Requisitos do Sistema
+# 📘 Requisitos do Sistema — Sudoku
+
+## 1) Escopo e Objetivo
+Este documento descreve os requisitos para um sistema de Sudoku destinado a oferecer uma experiência de jogo confiável, acessível e divertida, contemplando validação das regras clássicas, níveis de dificuldade e acompanhamento básico da partida.
+
+---
+
+## 2) Regras de Negócio (Domínio)
+- **RB-01**: Um tabuleiro é uma grade 9×9 dividida em 9 subgrades 3×3.  
+- **RB-02**: Cada linha deve conter os dígitos **1 a 9** sem repetição.  
+- **RB-03**: Cada coluna deve conter os dígitos **1 a 9** sem repetição.  
+- **RB-04**: Cada subgrade 3×3 deve conter os dígitos **1 a 9** sem repetição.  
+- **RB-05**: Células **pré-preenchidas** (do puzzle original) **não podem ser alteradas**.  
+- **RB-06**: Um puzzle é **válido** se possui **pelo menos uma solução** e é **bem-formado** (não viola RB-02/03/04).  
+- **RB-07**: Um puzzle é **concluído** quando **todas** as células são preenchidas e **todas** as regras RB-02/03/04 são satisfeitas.  
+
+---
+
+## 3) Requisitos Funcionais (RF)
+
+### 3.1 MVP (Primeira Entrega)
+- **RF-01 — Carregar Puzzle**: O sistema deve disponibilizar um tabuleiro inicial válido conforme o nível escolhido.  
+- **RF-02 — Inserir/Remover Número**: O usuário pode inserir ou apagar dígitos 1–9 em células permitidas.  
+- **RF-03 — Validação Imediata (opcional)**: O sistema deve informar violação de regra na linha, coluna ou subgrade.  
+- **RF-04 — Verificar Progresso**: O usuário pode solicitar a verificação do tabuleiro a qualquer momento.  
+- **RF-05 — Níveis de Dificuldade**: Disponibilizar pelo menos Fácil, Médio e Difícil.  
+- **RF-06 — Temporizador (Timer)**: Exibir tempo decorrido da partida (pausar/retomar).  
+- **RF-07 — Salvar/Retomar Partida (local)**: Permitir salvar o estado atual e retomar depois.  
+- **RF-08 — Reiniciar Puzzle**: Permitir reiniciar o puzzle para o estado original.  
+- **RF-09 — Notas/Rascunhos em Célula**: Usuários podem registrar candidatos 1–9 em uma célula como rascunhos.  
+
+#### Detalhamento do RF-09 (Notas/Rascunhos)
+- **CA-09.1**: Notas são visualmente diferentes do valor definitivo.  
+- **CA-09.2**: Permitir adicionar/remover candidatos individualmente (1–9).  
+- **CA-09.3**: Notas não contam para validação, apenas valores definitivos.  
+- **CA-09.4**: Ao definir valor definitivo, as notas da célula são limpas.  
+- **CA-09.5**: Rascunhos devem persistir em Salvar/Retomar.  
+- **CA-09.6**: Não é permitido inserir notas em células de pista.  
+
+##### Extensões de RF-09
+- **RF-09.1 — Modo Notas**: Alternância entre “inserir valor” e “inserir nota”.  
+- **RF-09.2 — Limpar Notas**: Ação para apagar todas as notas da célula.  
+- **RF-09.3 — Auto-Notas (opcional Fase 2)**: Remover automaticamente número das notas em células relacionadas após inserção definitiva.  
+
+### 3.2 Evoluções Futuras (Opcional/Fase 2+)
+- **RF-10 — Dica Controlada**  
+- **RF-11 — Desfazer/Refazer**  
+- **RF-12 — Estatísticas**  
+- **RF-13 — Importar/Exportar Puzzles**  
+- **RF-14 — Acessibilidade Avançada**  
+- **RF-15 — Multi-idioma (i18n)**  
+- **RF-16 — Catálogo de Puzzles**  
+- **RF-17 — Verificador de Unicidade**  
+- **RF-18 — Desafio Diário**  
+- **RF-19 — Perfis de Usuário**  
+
+---
+
+## 4) Requisitos Não Funcionais (RNF)
+
+### Qualidade e Experiência
+- **RNF-01 — Usabilidade**: interface clara, feedback imediato.  
+- **RNF-02 — Acessibilidade**: contraste adequado, navegação por teclado.  
+- **RNF-02.A — Acessibilidade de Notas**: rascunhos legíveis em alto contraste.  
+- **RNF-03 — Localização**: PT-BR padrão, preparado para tradução.  
+
+### Desempenho
+- **RNF-04 — Responsividade**: ações ≤ 100 ms.  
+- **RNF-04.A — Notas**: inserir/remover notas ≤ 100 ms.  
+- **RNF-05 — Verificação de Regras**: ≤ 50 ms por interação.  
+
+### Confiabilidade
+- **RNF-06 — Integridade**: pistas imutáveis.  
+- **RNF-07 — Persistência Local**: salvar/retomar não corrompe o estado.  
+- **RNF-07.A — Persistência de Notas**: rascunhos devem ser restaurados integralmente.  
+
+### Manutenibilidade & Testabilidade
+- **RNF-08 — Testes Automatizados**: cobrir regras de negócio.  
+- **RNF-09 — Separação de Responsabilidades**.  
+- **RNF-09.A — Testabilidade de Notas**: cenários de notas devem ter testes.  
+
+### Compatibilidade
+- **RNF-10 — Portabilidade**: rodar em desktop/notebook; suporte móvel desejável.  
+- **RNF-11 — Formatos Abertos**: exportação em texto/JSON.  
+
+### Segurança & Privacidade
+- **RNF-12 — Privacidade**: sem coleta de dados pessoais no MVP.  
+- **RNF-13 — Sanitização de Entrada**: evitar puzzles inválidos/maliciosos.  
+
+---
+
+## 5) Critérios Gerais de Aceitação (DoD)
+- **DoD-01**: Regras do jogo testadas em cenários positivos/negativos.  
+- **DoD-02**: MVP entrega RF-01 a RF-09.  
+- **DoD-03**: Textos revisados, acessibilidade mínima.  
+- **DoD-04**: Documentação de uso disponível.  
+- **DoD-05**: Sem erros críticos que impeçam concluir puzzle válido.  
+
+---
+
+## 6) Assunções (Premissas)
+- **AS-01**: O catálogo inicial de puzzles é válido.  
+- **AS-02**: O usuário compreende as regras básicas do Sudoku.  
+- **AS-03**: MVP não exige conta/login.  
+
+---
+
+## 7) Restrições
+- **RS-01**: MVP não exige internet.  
+- **RS-02**: Puzzles fornecidos não violam regras do jogo.  
+- **RS-03**: MVP não contempla ranking global.  
+
+---
+
+## 8) Matriz de Traçabilidade
+| Regra de Negócio | Requisitos Relacionados |
+|---|---|
+| RB-02/03/04 | RF-02, RF-03, RF-04, RF-09.3, RNF-04/05 |
+| RB-05 | RF-01, RF-02, RF-08, RF-09/09.1/09.2, RNF-06, RNF-02.A |
+| RB-07 | RF-04, RF-06, RF-12, RF-09 (persistência de notas) |
+
+---
+
+## 9) Roadmap sugerido
+1. **MVP**: RF-01 a RF-09 + RNF essenciais (RNF-01/02/04/06/08).  
+2. **Fase 2**: RF-10/11/12/13/14/15 + testes ampliados.  
+3. **Fase 3**: RF-16/17/18/19 (catálogo, unicidade, diário, perfis).  
